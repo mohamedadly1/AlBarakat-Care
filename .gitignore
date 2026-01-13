@@ -1,55 +1,46 @@
-# Dependencies
+# Node modules
 node_modules/
-/.pnp
-.pnp.js
 
-# Testing
-/coverage
-
-# Next.js
-/.next/
-/out/
-
-# Production
+# Build outputs
+/.next
+/dist
 /build
+/out
 
-# Misc
-.DS_Store
-*.pem
-
-# Debug
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Local env files
-.env*.local
+# Testing
+/coverage
+
+# Environment files
 .env
+.env.local
+.env.*.local
 
-# Vercel
-.vercel
+# OS files
+.DS_Store
+Thumbs.db
 
-# TypeScript
-*.tsbuildinfo
-next-env.d.ts
-
-# IDE
+# IDE / Editor files
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
 
-# OS
-.DS_Store
-Thumbs.db
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
-# Build outputs
-dist/
-*.log
+# Vercel
+.vercel
 
-
-# Additional patterns for Barakat
+# Duplicate/embedded repositories
 Barakat
 /Barakat
+Barakat/
 Barakat/**
