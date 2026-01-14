@@ -134,7 +134,7 @@ export default function TinnitusSolutionsPage() {
       <section className="py-20 bg-slate-900 text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-normal mb-6">Ready to find relief?</h2>
-          <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-slate-900">
+          <Button asChild size="lg" variant="outline" className="text-white border-white bg-transparent hover:text-slate-900">
             <Link href="/booking">Find a hearing care professional</Link>
           </Button>
         </div>
