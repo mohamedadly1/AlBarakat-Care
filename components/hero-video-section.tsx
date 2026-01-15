@@ -1,22 +1,22 @@
 "use client"
 
 import Link from "next/link"
-import { Package, TestTube, Mail, Building2 } from "lucide-react"
+import { Package, TestTube, Mail, Info, Building2 ,Stethoscope , Ear} from "lucide-react"
 
 export function HeroVideoSection() {
   const buttons = [
     {
-      icon: Package,
+      icon: Ear,
       label: "Products",
       href: "/products/accessories-batteries",
     },
     {
-      icon: TestTube,
+      icon: Stethoscope,
       label: "Hearing Test",
       href: "/hearing-test",
     },
     {
-      icon: Building2,
+      icon: Info,
       label: "About",
       href: "/about",
     },

@@ -10,14 +10,23 @@ export default function RextonTypesPage() {
     <div className="min-h-screen bg-white text-slate-900">
       <MainNavigation />
 {/* --- PAGE TITLE --- */}
-<section className="bg-white py-10 border-b">
-  <div className="container mx-auto max-w-7xl px-4 text-center">
-    <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide">
+<section
+  className="w-full border-b bg-cover bg-center bg-no-repeat aspect-[1600/540]"
+  style={{
+    backgroundImage:
+      "url('/images/Rexton_Reach_iX-CIC-Li_woman-side-view-close-up_mirrored_1600x540.webp')",
+  }}
+>
+  <div className="container mx-auto max-w-7xl px-4 h-full flex items-center justify-center text-center">
+    <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide text-white drop-shadow-lg">
       TYPES OF <br />
       <span className="text-primary">HEARING AIDS</span>
     </h1>
   </div>
 </section>
+
+
+
 
       {/* --- HERO SECTION --- */}
       <section className="bg-[#f8f9fa] py-20 border-b">
@@ -31,7 +40,7 @@ export default function RextonTypesPage() {
               </p>
             </div>
             <div className="relative h-[350px] w-full">
-              <Image src="/images/Reach_product-range_black-bg_1600x1067.webp" alt="Rexton Collection" fill className="object-contain" />
+              <Image src="/images/1122 Background Removed.png" alt="Rexton Collection" fill className="object-contain" />
             </div>
           </div>
         </div>
@@ -79,16 +88,14 @@ export default function RextonTypesPage() {
               <h2 className="text-3xl font-bold">BEHIND-THE-EAR (BTE) HEARING AIDS
               </h2>
               <p className="text-lg text-slate-600">
-                RIC hearing aids are the most popular type today. They are smaller and more discreet than traditional BTE aids. The receiver sits directly in the ear canal, connected by a thin wire, delivering a very natural sound quality.
-              </p>
-              <span className="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-bold rounded">MILD TO SEVERE LOSS</span>
-              <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
+              These are what most people think of when it comes to hearing aids. These devices wrap all electrical components inside its housing, which sits behind the ear. As amplified sound coming out of the BTE needs to reach the ear canal, a connection tube is used, which can either be a personalized earmold or an instant fit with a thin tube. BTE hearing aids are usually more powerful than other types and cover a wider range of hearing loss, from mild to profound. BTEs are easy to clean and handle, and normally offer longer battery life.              </p>
+               <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
   <Link href="/booking">Book Consultation</Link>
 </Button>
 
             </div>
             <div className="flex justify-center">
-              <Image src="/images/Rexton_Reach_Rugged_Black_800x800.webp" alt="RIC Model" width={450} height={450} className="object-contain" />
+              <Image src="/images/ xxxc.webp" alt="RIC Model" width={450} height={450} className="object-contain" />
             </div>
           </div>
         </div>
@@ -102,16 +109,23 @@ export default function RextonTypesPage() {
               <h2 className="text-3xl font-bold">RECEIVER-IN-THE-CANAL (RIC) HEARING AIDS
               </h2>
               <p className="text-lg text-slate-600">
-                These devices house all electrical components behind the ear. Sound is delivered through a tube into a custom earmold. They are the most powerful and durable devices available.
-              </p>
-              <span className="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-bold rounded">MILD TO PROFOUND LOSS</span>
+              They have become the most popular type of hearing aids because of a highly flexible and practical fitting.
+
+<br />
+<br />
+With one of the electrical components (the receiver) sitting in the ear canal, connected by a wire to the remaining components wrapped in a small housing behind the ear, RIC hearing aids are commonly smaller than BTEs and the best solution for those seeking for discreet fitting.
+<br />
+<br />
+Hearing losses from mild to severe can benefit from a RIC device, and thanks to a variety of instant fit options for couplers, it can be fitted without a specific earmold.
+               </p>
+              
               <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
   <Link href="/booking">Book Consultation</Link>
 </Button>
 
             </div>
             <div className="flex justify-center">
-              <Image src="/images/Rexton_Reach_R-Li_single-Black_bg_800x800.webp" alt="BTE Model" width={450} height={450} className="object-contain" />
+              <Image src="/images/xxc2 Background Removed.png" alt="BTE Model" width={450} height={450} className="object-contain" />
             </div>
           </div>
         </div>
@@ -123,18 +137,18 @@ export default function RextonTypesPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold">INSTANT-FIT HEARING AIDS
+
               </h2>
               <p className="text-lg text-slate-600">
-                Ready-to-wear immediately. These use soft, flexible sleeves to adapt to your ear canal without needing a custom impression, combining the benefits of a custom fit with immediate availability.
-              </p>
-              <span className="inline-block px-4 py-1 bg-primary/10 text-primary text-sm font-bold rounded">QUICK FITTING</span>
-              <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
+              Instant-fit sit in the ear and are ready-to-wear without custom molding. Soft and flexible tips are maximizing the wearing comfort.
+               </p>
+               <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
   <Link href="/booking">Book Consultation</Link>
 </Button>
 
             </div>
             <div className="flex justify-center">
-              <Image src="/images/Reach-iX-CIC-Li_pair_800x800.webp" alt="Instant Fit Model" width={450} height={450} className="object-contain" />
+              <Image src="/images/xxcc3 Background Removed.png" alt="Instant Fit Model" width={450} height={450} className="object-contain" />
             </div>
           </div>
         </div>
@@ -150,15 +164,14 @@ export default function RextonTypesPage() {
               <h2 className="text-3xl font-bold">CUSTOM CIC & IIC
               </h2>
               <p className="text-lg text-slate-600">
-                Molded to fit deep inside your ear canal. Only a small removal string is visible, making it a very discreet choice for those concerned about appearance.
-              </p>
+              CIC (Completely-In-the-Ccanal) and IIC (Invisible-In-the-Canal) hearing aids sit very deep in the ear canal, and are hardly seen from outside. They are meant to help with mild to moderate hearing loss.               </p>
               <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
   <Link href="/booking">Book Consultation</Link>
 </Button>
 
             </div>
             <div className="flex justify-center">
-              <Image src="/images/Reach_Custom_IIC-CIC_Black_1600x1067.webp" alt="CIC Custom Model" width={450} height={450} className="object-contain" />
+              <Image src="/images/xc4 Background Removed.png" alt="CIC Custom Model" width={450} height={450} className="object-contain" />
             </div>
           </div>
         </div>
@@ -172,15 +185,14 @@ export default function RextonTypesPage() {
               <h2 className="text-3xl font-bold">CUSTOM ITE & ITC
               </h2>
               <p className="text-lg text-slate-600">
-                The smallest custom style available. It sits past the second bend of the ear canal, making it virtually invisible to anyone around you.
-              </p>
+              An ITE (In-The-Ear) hearing aid fills the outer ear and is easier to handle than the smaller ITC (In-The-Canal). The larger size allows additional hearing aid features in comparison to the small IIC and CIC.              </p>
               <Button asChild size="lg" className="w-fit bg-primary hover:bg-primary/90">
   <Link href="/booking">Book Consultation</Link>
 </Button>
 
             </div>
             <div className="flex justify-center">
-              <Image src="/images/Reach_Custom_ITC-ITE_Black_1600x1067.webp" alt="IIC Custom Model" width={450} height={450} className="object-contain" />
+              <Image src="/images/xc55 Background Removed.png" alt="IIC Custom Model" width={450} height={450} className="object-contain" />
             </div>
           </div>
         </div>

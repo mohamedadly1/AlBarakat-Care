@@ -52,7 +52,7 @@ const featuredProducts = [
     id: "insio",
     name: "Signia Insio Custom",
     slug: "insio-custom",
-    image: "/images/product-showcase-4.jpg",
+    image: "/images/Insio-IX_IIC_black_pair_side_1920x1080.webp",
     description: "Custom-made hearing aids designed for comfort and performance.",
   },
   {

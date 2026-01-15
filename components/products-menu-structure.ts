@@ -73,7 +73,14 @@ export const productsMenuStructure = {
     },
     {
       id: "accessories",
-      label: "Accessories and Batteries Connectivity",
+      label: "Accessories and Batteries ",
+      icon: "Battery",
+      href: "/products/accessories-batteries",
+    },
+
+    {
+      id: "accessori",
+      label: "Accessories and Baies ",
       icon: "Battery",
       href: "/products/accessories-batteries",
     },
