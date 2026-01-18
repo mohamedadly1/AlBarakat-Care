@@ -57,6 +57,8 @@ export default function StylettoPage() {
                 </div>
               </div>
               <Button asChild size="lg"><Link href="/booking">Experience Styletto IX</Link></Button>
+              <Button asChild><Link href="/products/hearing-aid-brands/signia/stylettoix">See Details</Link></Button>
+
             </div>
             <div className="order-1 md:order-2">
               <img src="/images/Styletto-IX_black-silver_double_charger_1920x1080.webp" alt="Signia Styletto IX" className="w-full max-w-md mx-auto drop-shadow-2xl" />
@@ -89,7 +91,8 @@ export default function StylettoPage() {
                   <p className="text-xs text-muted-foreground">Red Dot Design award winner.</p>
                 </Card>
               </div>
-              <Button variant="outline" asChild size="lg" className="bg-transparent"><Link href="/contact">View Color Palette</Link></Button>
+               <Button asChild><Link href="/products/hearing-aid-brands/signia/stylettoax">See Details</Link></Button>
+
             </div>
           </div>
         </div>

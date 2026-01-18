@@ -27,15 +27,15 @@ export default function PureRICPage() {
       title: "Own Voice Processing 2.0",
      },
     {
-      img: "/images/axx4.webp", 
+      img: "/images/axx4.png", 
       title: "Augmented Speech Understanding",
      },
     {
-      img: "/images/axx5.webp", 
+      img: "/images/axx5.png", 
       title: "Immersive Soundscape",
      },
     {
-      img: "/images/axx6.webp", 
+      img: "/images/axx6.png", 
       title: "AX Soundscape Processing",
      }
   ];
@@ -126,13 +126,7 @@ export default function PureRICPage() {
                 and advanced tinnitus therapies.
               </p>
               <div>
-                <p className="font-bold mb-4">Available colors:</p>
-                <div className="flex gap-3">
-                  {/* Color Swatches */}
-                  {['#1a1a1a', '#6d6e71', '#d1d2d4', '#e6e7e8', '#f1f2f2'].map((color, i) => (
-                    <div key={i} className="h-8 w-8 rounded-full border border-slate-300 shadow-sm" style={{ backgroundColor: color }} />
-                  ))}
-                </div>
+               
               </div>
             </div>
           </div>
