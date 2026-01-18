@@ -25,6 +25,9 @@ export const productsMenuStructure = {
             },
             { id: "motion", label: "Motion", href: "/products/hearing-aid-brands/signia/motion" },
             { id: "insio-custom", label: "Intuis 4", href: "/products/hearing-aid-brands/signia/intuis4" },
+            { id: "silkx", label: "Silx-x", href: "/products/hearing-aid-brands/signia/silkx" },
+            { id: "silkx", label: "Silk Charge&Go IX", href: "/products/hearing-aid-brands/signia/silkix" },
+
             { id: "Insio Charge&Go AX", label: "Insio Charge&Go AX", href: "/products/hearing-aid-brands/signia/insiogoax" },
             { id: "other-signia", label: "Other Hearing Aids", href: "" },
           ],
