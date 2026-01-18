@@ -59,7 +59,7 @@ export default function PureBCTIXPage() {
         </div>
       </section>
  
-
+   
       {/* RealTime Conversation Enhancement */}
       <section className="py-24 bg-white">
         <div className="container mx-auto max-w-7xl px-4">
@@ -117,25 +117,47 @@ export default function PureBCTIXPage() {
               <img src="/images/cvb.png" alt="Pure 312 AX Black" className="w-full max-w-sm drop-shadow-2xl" />
             </div>
             <div className="space-y-6">
-              <h2 className="text-4xl font-bold">Pure 312 AX</h2>
+              <h2 className="text-4xl font-bold">Pure 312 X</h2>
               <p className="text-lg text-slate-600">
                 Packed with all the high-tech features you need, such as Bluetooth streaming 
                 and advanced tinnitus therapies.
               </p>
               <div>
-                <p className="font-bold mb-4">Available colors:</p>
-                <div className="flex gap-3">
-                  {/* Color Swatches */}
-                  {['#1a1a1a', '#6d6e71', '#d1d2d4', '#e6e7e8', '#f1f2f2'].map((color, i) => (
-                    <div key={i} className="h-8 w-8 rounded-full border border-slate-300 shadow-sm" style={{ backgroundColor: color }} />
-                  ))}
-                </div>
+              
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* Call to Action Footer */}
+      {/* Call to Action Footer */}    <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8 order-2 md:order-1">
+              <h2 className="text-4xl md:text-5xl font-medium">The hearing professional in your pocket</h2>
+              <p className="text-xl text-slate-600 font-light leading-relaxed">
+                The Signia app lets you contact your hearing care professional via your 
+                smartphone whenever you need remote support.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pt-4">
+               
+                <div className="flex gap-4">
+                  <img src="/images/Apple-App-Store-Badge_en_300px.webp" alt="Get it on Google Play" className="h-12 cursor-pointer" />
+                  <img src="/images/google-play-badge_en_300.webp" alt="Download on the App Store" className="h-12 cursor-pointer" />
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 md:order-2 flex justify-center">
+              <img 
+                src="/images/mobb.webp" 
+                alt="Signia App on Smartphone" 
+                className="w-full max-w-md drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-20 bg-primary text-primary-foreground text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-8">Ready for Brilliant Hearing?</h2>
