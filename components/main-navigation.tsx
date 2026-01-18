@@ -24,7 +24,7 @@ import {
   LogIn,
   Ear,
   Stethoscope,
-  Activity,  
+  Activity,
   TestTube,
   BookOpen,
   HelpCircle,
