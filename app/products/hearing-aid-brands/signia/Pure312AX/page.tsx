@@ -112,26 +112,6 @@ export default function PureRICPage() {
         </div>
       </section>
 
-      {/* Color Availability Section (Screenshot 11) */}
-      <section className="py-16 bg-slate-50 border-y">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
-              <img src="/images/cvb.png" alt="Pure 312 AX Black" className="w-full max-w-sm drop-shadow-2xl" />
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-4xl font-bold">Pure 312 AX</h2>
-              <p className="text-lg text-slate-600">
-                Packed with all the high-tech features you need, such as Bluetooth streaming 
-                and advanced tinnitus therapies.
-              </p>
-              <div>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* 6 Features Carousel (Updated for AX Content) */}
       <section className="py-24 bg-white overflow-hidden">
@@ -165,9 +145,184 @@ export default function PureRICPage() {
           </div>
         </div>
       </section>
+      <div className="bg-white font-sans text-slate-900">
+      
+      {/* 1. Connectivity and App Control */}
+      <section className="py-24 container mx-auto px-6 max-w-6xl text-center">
+        <h2 className="text-5xl font-medium mb-12">Connectivity and app control</h2>
+        <div className="space-y-8 text-xl text-slate-600 font-light leading-relaxed max-w-5xl mx-auto">
+          <p>
+            Pure 312 AX connects to the Signia app, which contains the Signia Assistant 
+            and TeleCare support. Using artificial intelligence, the Signia Assistant 
+            offers you immediate support whenever you need to adjust settings.
+          </p>
+          <p className="text-2xl font-normal text-slate-800">
+            Pure 312 AX hearing aids are powered by batteries that deliver a runtime of around 4 days.
+          </p>
+        </div>
+      </section>
 
+      {/* 2. Prescription Audio Feature */}
+      <section className="py-20 bg-slate-50">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <h2 className="text-5xl font-medium">Prescription audio that performs</h2>
+              <div className="space-y-6 text-xl text-slate-600 font-light leading-relaxed">
+                <p>
+                  Pure 312 AX give you state-of-the-art Bluetooth connectivity for 
+                  Android and iOS devices. So you can easily stream your phone calls, 
+                  music and TV audio straight to your tiny hearing aids in high-quality 
+                  digital sound.
+                </p>
+                <p>
+                  You can also connect your Pure 312 AX to the Signia app, which features 
+                  groundbreaking artificial intelligence (AI) via the Signia Assistant.
+                </p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="/images/ghh.jpg" 
+                alt="Woman in white suit dancing" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
       {/* Video Guide Section (Screenshot 10) */}
-      <section className="py-20 bg-slate-900 text-white">
+
+
+
+<div className="bg-white font-sans text-slate-900">
+      
+      {/* 1. AI Powered Personal Sound Section */}
+      <section className="py-20 container mx-auto px-6 max-w-7xl">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="flex justify-center">
+            {/* AI Assistant Face Icon */}
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-[3.5rem] flex items-center justify-center p-12">
+              <img 
+                src="/images/motiong.webp" 
+                alt="AI Digital Assistant" 
+                className="w-full h-auto"
+              />
+            </div>
+          </div>
+          
+          <div className="space-y-6">
+            <h2 className="text-4xl md:text-5xl font-medium">AI powered personal sound</h2>
+            <div className="space-y-4 text-lg text-slate-600 font-light leading-relaxed">
+              <p>
+                Inspired by the way the human brain’s neural network solves challenges, 
+                the Signia Assistant offers immediate support whenever you need to adjust any settings.
+              </p>
+              <p>
+                The live deep neural network AI marks a revolution in hearing care. It is a 
+                living system that continuously learns about your individual needs in specific situations.
+              </p>
+              <p className="italic font-normal text-slate-800">
+                93% of hearing aid wearers regard the Signia Assistant as a meaningful 
+                innovation that raises their satisfaction.
+              </p>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+
+      {/* 2. Remote Support & App Download Section */}
+      <section className="py-24 bg-slate-50">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8 order-2 md:order-1">
+              <h2 className="text-4xl md:text-5xl font-medium">The hearing professional in your pocket</h2>
+              <p className="text-xl text-slate-600 font-light leading-relaxed">
+                The Signia app lets you contact your hearing care professional via your 
+                smartphone whenever you need remote support.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center pt-4">
+               
+                <div className="flex gap-4">
+                  <img src="/images/Apple-App-Store-Badge_en_300px.webp" alt="Get it on Google Play" className="h-12 cursor-pointer" />
+                  <img src="/images/google-play-badge_en_300.webp" alt="Download on the App Store" className="h-12 cursor-pointer" />
+                </div>
+              </div>
+            </div>
+
+            <div className="order-1 md:order-2 flex justify-center">
+              <img 
+                src="/images/mobb.webp" 
+                alt="Signia App on Smartphone" 
+                className="w-full max-w-md drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <section className="py-20 bg-white font-sans text-slate-900">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          
+          {/* Text Content */}
+          <div className="space-y-8">
+            <h2 className="text-5xl font-medium leading-tight">
+              Get extra support on the spot
+            </h2>
+            <p className="text-xl text-slate-600 font-light leading-relaxed">
+              Signia TeleCare enables you to keep in touch with your hearing 
+              care professional, so you get support when you need it.
+            </p>
+            <p className="text-2xl font-normal">
+              So you can Be Brilliant in any situation.
+            </p>
+            
+            <div className="pt-4">
+             
+            </div>
+          </div>
+
+          {/* Visual Image */}
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img 
+              src="/images/rtt.webp" 
+              alt="Person using Signia TeleCare app" 
+              className="w-full h-auto object-cover"
+            />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  
+      {/* Color Availability Section (Screenshot 11) */}
+      <section className="py-16 bg-slate-50 border-y">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <img src="/images/cvb.png" alt="Pure 312 AX Black" className="w-full max-w-sm drop-shadow-2xl" />
+            </div>
+            <div className="space-y-6">
+              <h2 className="text-4xl font-bold">Pure 312 AX</h2>
+              <p className="text-lg text-slate-600">
+                Packed with all the high-tech features you need, such as Bluetooth streaming 
+                and advanced tinnitus therapies.
+              </p>
+              <div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section className="py-20 bg-slate-900 text-white">
   <div className="container mx-auto max-w-7xl px-4">
     <h2 className="text-3xl font-bold mb-12">How to handle Pure 312 AX</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

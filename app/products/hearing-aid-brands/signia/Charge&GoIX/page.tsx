@@ -27,7 +27,13 @@ export default function PureRICPage() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
 
-
+  const pairingVideos = [
+    { title: "Pairing Pure Charge&Go BCT IX to an iPhone", url: "https://www.youtube.com/embed/IYcws0FSvE0?si=Q7gtbZ8L_1SGyFAU" },
+    { title: "Pairing Pure Charge&Go BCT IX to an Android phone", url: "https://www.youtube.com/embed/_HiFo9zsFcE?si=YuHRWuhZutqV8HKX" },
+    { title: "Pairing Pure Charge&Go BCT IX to a PC", url: "https://www.youtube.com/embed/gq9NWZ8ZRmw?si=92IEAfY2mOYxY348" },
+    { title: "How to switch Pure Charge&Go BCT IX streaming connection between an iPhone and a PC", url: "https://www.youtube.com/embed/QBRnfI-Dc7s?si=tsF00BQNminpbxZF" },
+    { title: "How to switch Pure Charge&Go BCT IX streaming connection between an Android phone and a PC", url: "https://www.youtube.com/embed/O0FbmC9M-_c?si=dlQciJvNzOLHu7tf" },
+  ];
   const features = [
 
     {
@@ -168,11 +174,7 @@ export default function PureRICPage() {
 
               <div className="pt-6">
 
-                <Button size="lg" asChild className="rounded-full px-10 shadow-xl bg-primary hover:bg-primary/90 text-primary-foreground">
-
-                  <Link href="/booking">Discover Pure Charge&Go BCT IX</Link>
-
-                </Button>
+            
 
               </div>
 
@@ -381,9 +383,186 @@ export default function PureRICPage() {
         </div>
 
       </section>
+      <section className="bg-white py-16 font-sans">
+      <div className="container mx-auto max-w-7xl px-6">
+        
+        {/* Heading and Intro */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-medium text-slate-900 mb-6">
+            Watch Signia experts demonstrate what Pure Charge&Go IX can do
+          </h2>
+          <p className="text-lg text-slate-600 font-light max-w-4xl mx-auto">
+            See the groundbreaking RealTime Conversation Enhancement technology of Signia Integrated Xperience in action.
+          </p>
+        </div>
 
+        {/* Video Demo Container */}
+        <div className="relative group max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
+          {/* YouTube Embed specifically for IX Sound Demo */}
+          <div className="aspect-video bg-black flex items-center justify-center">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/HTsiTKW1lI8?si=hVxx04D23uXKjyQ1" 
+              title="Signia Integrated Xperience: sound demo"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+          
+          {/* Overlay text matching the live capture look */}
+          <div className="absolute bottom-10 left-10 z-20 hidden md:block">
+            <div className="bg-black/60 backdrop-blur-md px-4 py-2 rounded text-white text-sm font-light border-l-2 border-red-500">
+              This helps ensure <br /> that speech is prominent
+            </div>
+          </div>
+        </div>
 
+     
+      </div>
+    </section>
 
+    <div className="bg-white font-sans text-slate-900">
+      
+   
+
+      {/* 2. IX Performance Statistics */}
+      <section className="py-20 bg-white border-t border-slate-50">
+        <div className="container mx-auto px-6 text-center max-w-5xl">
+          <h2 className="text-3xl md:text-4xl font-medium leading-tight mb-8">
+            Signia IX offers a 22% improvement in speech understanding in a noisy group conversation compared to our closest competitors.*
+          </h2>
+          <div className="text-[10px] text-slate-400 leading-relaxed uppercase tracking-wider">
+            <p>*Jensen NS, Mohnlein-Gilbert K, Wilson C, Berwick N, Kamkar Parsi H, Samra B, Best S & Taylor B. 2024.</p>
+            <p className="mt-2">
+              Signia IX with pioneering multi-stream technology delivers 22% better speech understanding in noisy group conversation 
+              than a competitor with an AI co-processor-driven platform. Signia White Paper.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Final Call to Action Hero */}
+      <section className="relative h-[500px] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/images/ban.webp" 
+            alt="Smiling woman looking up" 
+            className="w-full h-full object-cover object-center"
+          />
+          {/* Subtle Blue/Dark Overlay to match screenshot */}
+          <div className="absolute inset-0 bg-blue-900/20 mix-blend-multiply" />
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10 flex flex-col items-end text-right">
+          <div className="max-w-2xl text-white space-y-8">
+            <h2 className="text-4xl md:text-5xl font-medium leading-tight drop-shadow-md">
+              Ready to take the first step to better hearing?
+              <span className="block mt-2">Try our free online hearing test.</span>
+            </h2>
+            
+            <a 
+            href="/app/hearing-test" // Replace with your actual URL
+            className="inline-block bg-[#004a99] hover:bg-[#003366] text-white text-xl font-medium px-14 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl  tracking-wide"
+          >
+            Take the test
+          </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div className="bg-white font-sans text-slate-900 py-20">
+      <div className="container mx-auto max-w-7xl px-6 space-y-32">
+        
+        {/* 1. Versatile Charging Solutions */}
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="flex justify-center">
+            <img 
+              src="/images/riccv.webp" 
+              alt="Signia Charging Solutions" 
+              className="w-full max-w-lg h-auto"
+            />
+          </div>
+          <div className="space-y-8">
+            <h2 className="text-4xl md:text-5xl font-medium">Versatile charging solutions</h2>
+            
+            <div className="space-y-6">
+              <div>
+                <p className="text-lg font-bold">Charge anytime, anywhere:</p>
+                <p className="text-lg text-slate-600 font-light">
+                  Take your hearing aids on the move with our pocket-sized charging case, which holds enough power to provide 3 full charges.
+                </p>
+              </div>
+              
+              <div>
+                <p className="text-lg font-bold">Charge at home with ease:</p>
+                <p className="text-lg text-slate-600 font-light">
+                  Our Standard Charger provides reliable desktop charging.
+                </p>
+              </div>
+              
+              <div>
+                <p className="text-lg font-bold">Clean while you charge:</p>
+                <p className="text-lg text-slate-600 font-light">
+                  Our Dry&Clean charger also cleans and dries your hearing aids in just 15 minutes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 2. Pure Charge&Go BCT IX Product Section */}
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="flex justify-center order-1 md:order-2">
+            <img 
+              src="/images/vcxx.png" 
+              alt="Pure Charge&Go BCT IX" 
+              className="w-full max-w-md h-auto"
+            />
+          </div>
+          <div className="space-y-8 order-2 md:order-1 text-left">
+            <h2 className="text-4xl md:text-5xl font-medium">Pure Charge&Go BCT IX</h2>
+            <div className="space-y-6 text-xl text-slate-700 font-light leading-relaxed">
+              <p>
+                A small RIC hearing aid that is compatible with Bluetooth® Classic. 
+                Can operate for unprecedented 36 hours between charges (with 5 hours 
+                of streaming) and a portable charger is also available.
+              </p>
+            </div>
+ 
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    {/* 1. Bluetooth Pairing Video Grid */}
+    <section className="py-20 container mx-auto px-6 max-w-7xl">
+        <h2 className="text-4xl font-medium mb-12">
+          Bluetooth pairing for Pure Charge&Go BCT IX hearing aids
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {pairingVideos.map((video, idx) => (
+            <div key={idx} className="space-y-4">
+              <div className="aspect-video bg-slate-100 rounded-lg overflow-hidden relative group cursor-pointer shadow-sm">
+                <iframe
+                  className="w-full h-full"
+                  src={video.url}
+                  title={video.title}
+                  frameBorder="0"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <p className="text-lg font-medium leading-snug pr-4">
+                {video.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
       <footer className="border-t py-12 text-center text-sm text-muted-foreground">
 
         <p>© 2026 Al Barakat Hearing Centers. Official Signia Partner in KSA.</p>

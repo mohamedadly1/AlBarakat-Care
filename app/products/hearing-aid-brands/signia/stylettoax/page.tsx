@@ -300,9 +300,7 @@ export default function PureRICPage() {
                   The Signia app lets you contact your hearing care professional via your smartphone whenever you need remote support.
                 </p>
               </div>
-              <Button variant="outline" className="rounded-full border-slate-900 px-8 py-6 font-bold">
-                Learn more
-              </Button>
+          
             </div>
 
             <div className="flex flex-col items-center space-y-8 order-1 md:order-2">
