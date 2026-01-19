@@ -56,8 +56,15 @@ export default function StylettoPage() {
                   <span className="text-sm font-medium">Direct streaming for iPhone & Android</span>
                 </div>
               </div>
+ 
+
+
+
+<div className="flex flex-wrap items-center gap-4">
+
               <Button asChild size="lg"><Link href="/booking">Experience Styletto IX</Link></Button>
               <Button asChild><Link href="/products/hearing-aid-brands/signia/stylettoix">See Details</Link></Button>
+              </div>
 
             </div>
             <div className="order-1 md:order-2">

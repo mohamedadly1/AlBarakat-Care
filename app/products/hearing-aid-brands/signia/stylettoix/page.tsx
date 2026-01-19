@@ -72,13 +72,7 @@ export default function PureRICPage() {
 
             {/* CTA Button in your Primary Blue */}
             <div className="pt-10">
-              <Button 
-                size="lg" 
-                asChild 
-                className="rounded-full px-10 py-7 text-lg bg-primary hover:bg-primary/90 text-white font-bold border-none shadow-xl transition-transform hover:scale-105"
-              >
-                <Link href="/styletto-ix">Learn more about Styletto IX</Link>
-              </Button>
+        
             </div>
           </div>
         </div>

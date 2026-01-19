@@ -96,8 +96,14 @@ The world’s first hearing aid with <strong>RealTime Conversation Enhancement</
 
 </ul>
 
-<Button className="" asChild><Link href="/booking">Trial Pure IX Today</Link></Button>
-<Button asChild><Link href="/products/hearing-aid-brands/signia/Charge&GoIX">See Details</Link></Button>
+<div className="flex gap-4">
+  <Button className="" asChild>
+    <Link href="/booking">Trial Pure IX Today</Link>
+  </Button>
+  <Button asChild>
+    <Link href="/products/hearing-aid-brands/signia/Charge&GoIX">See Details</Link>
+  </Button>
+</div>
 
 </div>
 
