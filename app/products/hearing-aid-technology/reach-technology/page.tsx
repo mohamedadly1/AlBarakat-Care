@@ -12,129 +12,75 @@ export default function REACHTechnologyPage() {
   return (
     <div className="min-h-screen">
       <MainNavigation />
-
-      <section className="border-b bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 py-16 md:py-24">
-        <div className="container mx-auto max-w-7xl px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <h1 className="mb-4 text-4xl font-bold tracking-tight md:text-5xl">REACH Technology</h1>
-            <p className="text-lg text-muted-foreground">
-              Extended connectivity and range for seamless hearing in any situation.
-            </p>
+      <section className="relative w-full h-[500px] md:h-[600px] overflow-hidden">
+        <img 
+          src=" /images/banmvc.webp" 
+          alt="Man in an apron smiling in a busy cafe environment" 
+          className="w-full h-full object-cover"
+        />
+        {/* Yellow Branding Box Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div className="  p-6 md:p-10 max-w-sm md:max-w-xl bg-black/10 backdrop-blur-[2px]">
+            <h2 className="text-white text-4xl md:text-6xl font-bold uppercase leading-tight">
+              Every voice matters <br />
+              Rexton Reach
+            </h2>
           </div>
         </div>
       </section>
-
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto max-w-7xl px-4">
-          <h2 className="mb-8 text-3xl font-bold">Revolutionary Connectivity</h2>
-          <div className="grid gap-6 md:grid-cols-2 mb-12">
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="mb-4 text-xl font-semibold">Extended Range</h3>
-                <p className="text-muted-foreground mb-4">
-                  REACH Technology provides extended connectivity range for greater flexibility.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Long-range wireless connection</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Stable signal transmission</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Multiple device pairing</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="mb-4 text-xl font-semibold">Smart Connectivity</h3>
-                <p className="text-muted-foreground mb-4">
-                  Intelligent device management for seamless switching and control.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Automatic device detection</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Quick switching between sources</span>
-                  </li>
-                  <li className="flex gap-2">
-                    <span className="text-primary font-bold">•</span>
-                    <span>Priority audio routing</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
+      <section className="bg-white py-20 md:py-28 font-sans text-slate-900">
+      <div className="container mx-auto px-6 max-w-7xl">
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          
+          {/* Left Content Column */}
+          <div className="w-full lg:w-3/5 space-y-10">
+            <div className="space-y-4">
+              <h2 className="text-4xl md:text-5xl font-bold uppercase tracking-tight leading-tight border-l-8 border-[#fff200] pl-6">
+                Multi-Voice Focus makes sure <br />
+                every voice is heard
+              </h2>
+            </div>
+            
+            <div className="space-y-6 text-xl text-slate-600 font-light leading-relaxed">
+              <p>
+                When multiple people are involved in a conversation, voices drop in and 
+                out, and move around. Until now, hearing aid users have struggled to catch 
+                every word. 
+              </p>
+              <p>
+                <strong className="text-slate-900 font-semibold">Rexton Reach</strong>, with Multi-Voice Focus, will make sure every 
+                voice is heard. The technology scans the surrounding environment <span className="text-slate-900 font-medium">1,000 times a second</span> with <span className="text-slate-900 font-medium">4 focus beams</span>.
+              </p>
+              <p>
+                It adapts automatically to changes in speaker positions and volumes, ensuring 
+                you stay connected to the conversation, no matter how dynamic it becomes.
+              </p>
+            </div>
           </div>
 
-          <h2 className="mb-8 text-3xl font-bold">Benefits</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-lg font-semibold">Always Connected</h3>
-                <p className="text-muted-foreground">
-                  Stay connected to all your devices without losing signal or quality.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-lg font-semibold">Seamless Experience</h3>
-                <p className="text-muted-foreground">
-                  Smooth, uninterrupted transitions between devices and audio sources.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-lg font-semibold">Full Control</h3>
-                <p className="text-muted-foreground">
-                  Complete control over all connectivity features through intuitive controls.
-                </p>
-              </CardContent>
-            </Card>
+          {/* Right Illustration Column */}
+          <div className="w-full lg:w-2/5 flex justify-center">
+            <div className="relative group">
+              {/* Outer Glow Effect */}
+              <div className="absolute -inset-4 bg-yellow-100/50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition duration-500"></div>
+              
+              {/* The Technical Graphic */}
+              <div className="relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center rounded-full ">
+                <img 
+                  src=" /images/anmib Background Removed.png" 
+                  alt="Rexton Reach Multi-Voice Focus technology diagram" 
+                  className="w-4/5 h-auto object-contain"
+                />
+              </div>
+            </div>
           </div>
+
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section className="bg-muted/50 py-12 md:py-16">
-        <div className="container mx-auto max-w-7xl px-4">
-          <h2 className="mb-8 text-3xl font-bold">Technology Capabilities</h2>
-          <div className="space-y-6">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-lg font-semibold">Multi-Point Connectivity</h3>
-                <p className="text-muted-foreground">
-                  Connect to multiple devices simultaneously for maximum convenience and flexibility.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-lg font-semibold">Robust Signal</h3>
-                <p className="text-muted-foreground">
-                  Advanced antenna design ensures strong, reliable signal in any environment.
-                </p>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-lg font-semibold">Battery Efficient</h3>
-                <p className="text-muted-foreground">
-                  Extended connectivity without draining your hearing aid batteries faster.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+
+
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto max-w-7xl px-4">

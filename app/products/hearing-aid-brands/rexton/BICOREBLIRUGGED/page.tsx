@@ -425,7 +425,8 @@ export default function BiCoreRICPage() {
     className="absolute top-0 left-0 w-full h-full"
     allowFullScreen
   ></iframe>
-  {/* Brand Frame Accent */} </div>
+  {/* Brand Frame Accent */}
+   </div>
  </div>
       </div>
 
