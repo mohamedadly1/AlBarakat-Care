@@ -26,7 +26,7 @@ export const productsMenuStructure = {
             { id: "motion", label: "Motion", href: "/products/hearing-aid-brands/signia/motion" },
             { id: "insio-custom", label: "Intuis 4", href: "/products/hearing-aid-brands/signia/intuis4" },
             { id: "silkx", label: "Silx-x", href: "/products/hearing-aid-brands/signia/silkx" },
-            { id: "silkx", label: "Silk Charge&Go IX", href: "/products/hearing-aid-brands/signia/silkix" },
+            { id: "silkxx", label: "Silk Charge&Go IX", href: "/products/hearing-aid-brands/signia/silkix" },
 
             { id: "Insio Charge&Go AX", label: "Insio Charge&Go AX", href: "/products/hearing-aid-brands/signia/insiogoax" },
             { id: "other-signia", label: "Other Hearing Aids", href: "" },
@@ -39,16 +39,16 @@ export const productsMenuStructure = {
           items: [
             { id: "bi-core-b", label: "Bi-Core B", href: "/products/hearing-aid-brands/rexton/bi-core-b" },
             {
-              id: "bi-core-ric",
-              label: "Bi-Core RIC R /R Li",
-              href: "/products/hearing-aid-brands/rexton/bi-core-ric",
+              id: "BICORE R-LI",
+              label: "BICORE R-LI",
+              href: "/products/hearing-aid-brands/rexton/BICORER-LI",
             },
             {
               id: "bi-core-rugged",
-              label: "Bi-Core Rugged",
-              href: "/products/hearing-aid-brands/rexton/bi-core-rugged",
+              label: "BICORE R 312",
+              href: "/products/hearing-aid-brands/rexton/r-312",
             },
-            { id: "other-rexton", label: "Other Hearing Aids", href: "" },
+            { id: "BICOREB-LIRUGGED", label: "BICORE B-LI RUGGED", href: "/products/hearing-aid-brands/rexton/BICOREBLIRUGGED" },
           ],
         },
       ],
