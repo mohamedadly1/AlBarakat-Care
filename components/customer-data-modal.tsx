@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { branches } from "@/lib/branches-data"
 import { MapPin, Map, ArrowRight, Ear, X } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { DialogTitle, DialogDescription } from "@/components/ui/dialog"
 
 export interface CustomerData {
   name: string
@@ -86,7 +87,17 @@ export function CustomerDataModal({ open, onComplete, onClose }: CustomerDataMod
 
   return (
     <Dialog open={open}>
-      <DialogContent className="max-w-2xl p-0 border-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+      <DialogContent className="max-w-2xl p-0 border-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden" showCloseButton={false}>
+        {/* Visually hidden title for accessibility */}
+        <DialogTitle className="sr-only">
+          {step === "form" ? "Hearing Test Form" : "Select Your Nearest Location"}
+        </DialogTitle>
+        <DialogDescription className="sr-only">
+          {step === "form" 
+            ? "Please provide your information to personalize your hearing test experience" 
+            : "Choose the location nearest to you for your hearing test"}
+        </DialogDescription>
+
         {/* Animated background elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
