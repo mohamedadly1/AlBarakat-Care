@@ -20,6 +20,7 @@ type TestStage = "customer-data" | "equipment" | "theoretical" | "left-ear" | "r
 
 export default function HearingTestPage() {
   const [stage, setStage] = useState<TestStage>("customer-data")
+  const [showCustomerModal, setShowCustomerModal] = useState(true)
   const [customerData, setCustomerData] = useState<CustomerData | null>(null)
   const [equipmentData, setEquipmentData] = useState<any>(null)
   const [theoreticalAnswers, setTheoreticalAnswers] = useState<number[]>([])
@@ -72,6 +73,7 @@ export default function HearingTestPage() {
 
   const handleRetake = () => {
     setStage("customer-data")
+    setShowCustomerModal(true)
     setCustomerData(null)
     setEquipmentData(null)
     setTheoreticalAnswers([])
@@ -80,11 +82,15 @@ export default function HearingTestPage() {
     setFinalResults(null)
   }
 
+  const handleCloseModal = () => {
+    setShowCustomerModal(false)
+  }
+
   return (
     <div className="min-h-screen">
       <MainNavigation />
 
-      <CustomerDataModal open={stage === "customer-data"} onComplete={handleCustomerDataComplete} />
+      <CustomerDataModal open={showCustomerModal && stage === "customer-data"} onComplete={handleCustomerDataComplete} onClose={handleCloseModal} />
 
       <div className="container mx-auto max-w-7xl px-4 py-12">
         {stage === "equipment" && <EquipmentSetup onComplete={handleEquipmentComplete} />}
