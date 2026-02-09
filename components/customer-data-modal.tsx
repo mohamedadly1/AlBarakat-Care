@@ -8,8 +8,9 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { branches } from "@/lib/branches-data"
-import { MapPin, Map, ArrowRight, Ear } from "lucide-react"
+import { MapPin, Map, ArrowRight, Ear, X } from "lucide-react"
 import { Card } from "@/components/ui/card"
+import { DialogTitle, DialogDescription } from "@/components/ui/dialog"
 
 export interface CustomerData {
   name: string
@@ -25,9 +26,10 @@ export interface CustomerData {
 interface CustomerDataModalProps {
   open: boolean
   onComplete: (data: CustomerData) => void
+  onClose?: () => void
 }
 
-export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) {
+export function CustomerDataModal({ open, onComplete, onClose }: CustomerDataModalProps) {
   const [step, setStep] = useState<"form" | "branch-map">("form")
   const [formData, setFormData] = useState<CustomerData>({
     name: "",
@@ -47,13 +49,6 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
 
   const handleContinueToMap = (e: React.FormEvent) => {
     e.preventDefault()
-    const { name, age, gender, mobile, email } = formData
-
-    if (!name || !age || !gender || !mobile || !email) {
-      alert("Please fill in all required fields")
-      return
-    }
-
     setStep("branch-map")
   }
 
@@ -92,7 +87,17 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
 
   return (
     <Dialog open={open}>
-      <DialogContent className="max-w-2xl p-0 border-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
+      <DialogContent className="max-w-2xl p-0 border-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 overflow-hidden" showCloseButton={false}>
+        {/* Visually hidden title for accessibility */}
+        <DialogTitle className="sr-only">
+          {step === "form" ? "Hearing Test Form" : "Select Your Nearest Location"}
+        </DialogTitle>
+        <DialogDescription className="sr-only">
+          {step === "form" 
+            ? "Please provide your information to personalize your hearing test experience" 
+            : "Choose the location nearest to you for your hearing test"}
+        </DialogDescription>
+
         {/* Animated background elements */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
@@ -100,15 +105,24 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
         <div className="relative z-10">
           {step === "form" ? (
             <>
-              {/* Header with icon */}
-              <div className="bg-gradient-to-r from-blue-600 to-teal-500 px-8 py-8 text-white">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
-                    <Ear className="h-6 w-6" />
+              {/* Header with icon and close button */}
+              <div className="bg-gradient-to-r from-blue-600 to-teal-500 px-8 py-8 text-white flex items-start justify-between">
+                <div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="p-2 bg-white/20 rounded-lg backdrop-blur-sm">
+                      <Ear className="h-6 w-6" />
+                    </div>
+                    <h2 className="text-2xl font-bold">Hearing Test</h2>
                   </div>
-                  <h2 className="text-2xl font-bold">Hearing Test</h2>
+                  <p className="text-blue-100 text-sm">Help us personalize your experience</p>
                 </div>
-                <p className="text-blue-100 text-sm">Help us personalize your experience</p>
+                <button
+                  onClick={onClose}
+                  className="p-2 rounded-lg hover:bg-white/20 transition-colors"
+                  aria-label="Close dialog"
+                >
+                  <X className="h-6 w-6" />
+                </button>
               </div>
 
               {/* Form content */}
@@ -119,14 +133,13 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
                     <Label htmlFor="name" className="text-slate-300 font-semibold text-sm">
                       Full Name
                     </Label>
-                    <Input
-                      id="name"
-                      required
-                      placeholder="John Doe"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange("name", e.target.value)}
-                      className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
-                    />
+                  <Input
+                    id="name"
+                    placeholder="John Doe"
+                    value={formData.name}
+                    onChange={(e) => handleInputChange("name", e.target.value)}
+                    className="bg-slate-700/50 border-slate-600 text-white placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-500/20"
+                  />
                   </div>
 
                   {/* Age field */}
@@ -137,7 +150,6 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
                     <Input
                       id="age"
                       type="number"
-                      required
                       placeholder="30"
                       min="1"
                       max="150"
@@ -181,7 +193,6 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
                     <Input
                       id="mobile"
                       type="tel"
-                      required
                       placeholder="+966 XX XXX XXXX"
                       value={formData.mobile}
                       onChange={(e) => handleInputChange("mobile", e.target.value)}
@@ -198,7 +209,6 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
                   <Input
                     id="email"
                     type="email"
-                    required
                     placeholder="john@example.com"
                     value={formData.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
@@ -215,15 +225,24 @@ export function CustomerDataModal({ open, onComplete }: CustomerDataModalProps) 
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
 
-                <p className="text-xs text-slate-400 text-center">* All fields are required</p>
+                <p className="text-xs text-slate-400 text-center">* Optional fields</p>
               </form>
             </>
           ) : (
             <>
               {/* Branch selection header */}
-              <div className="bg-gradient-to-r from-blue-600 to-teal-500 px-8 py-8 text-white">
-                <h2 className="text-2xl font-bold mb-2">Select Your Nearest Location</h2>
-                <p className="text-blue-100 text-sm">Choose the location nearest to you</p>
+              <div className="bg-gradient-to-r from-blue-600 to-teal-500 px-8 py-8 text-white flex items-start justify-between">
+                <div>
+                  <h2 className="text-2xl font-bold mb-2">Select Your Nearest Location</h2>
+                  <p className="text-blue-100 text-sm">Choose the location nearest to you</p>
+                </div>
+                <button
+                  onClick={onClose}
+                  className="p-2 rounded-lg hover:bg-white/20 transition-colors"
+                  aria-label="Close dialog"
+                >
+                  <X className="h-6 w-6" />
+                </button>
               </div>
 
               {/* Branch cards */}
